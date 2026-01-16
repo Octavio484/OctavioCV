@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos | Profr. Octavio Cruz Vásquez</title>
+
+  <!-- Recomendado para GitHub Pages: rutas relativas (sin / al inicio) -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+<!-- ================= TOP NAVIGATION ================= -->
+<header class="top-nav">
+  <div class="container top-nav-inner">
+    <a href="index.html" class="top-nav-brand">
+      <span class="top-nav-name">Profr. Octavio Cruz Vásquez</span>
+      <span class="top-nav-role">Docencia • Física y Química</span>
+    </a>
+
+    <nav class="top-nav-links" aria-label="Navegación principal">
+      <a class="top-nav-link" href="index.html#about">Sobre mí</a>
+      <a class="top-nav-link active" href="cursos.html">Cursos</a>
+      <a class="top-nav-link" href="proyectos.html">Proyectos</a>
+      <a class="top-nav-link" href="recursos.html">Recursos</a>
+    </nav>
+
+    <div class="top-nav-actions">
+      <a href="cursos.html" class="btn btn-outline top-nav-btn">Ver cursos</a>
+      <a href="recursos.html" class="btn btn-primary top-nav-btn">Recursos</a>
+
+      <!-- Botón hamburguesa (para móvil) -->
+      <button class="top-nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-decoration">
+    <div class="hero-circle hero-circle-1"></div>
+    <div class="hero-circle hero-circle-2"></div>
+    <div class="hero-circle hero-circle-3"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-university">Contenido por asignatura</p>
+        <h1 class="hero-name">
+          Cursos<br />
+          <span>y asignaturas</span>
+        </h1>
+        <p class="hero-quote">"Ciencia clara, aprendizaje con sentido."</p>
+        <p class="hero-description">
+          Aquí encontrarás la organización de cursos por nivel, con acceso a temarios, teoría,
+          materiales y rutas de estudio.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#lista-cursos" class="btn btn-outline">
+            Ver listado
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </a>
+
+          <a href="recursos.html" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" />
+            </svg>
+            Ir a Recursos
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+              <circle cx="12" cy="8" r="6" />
+            </svg>
+            <span>Nivel superior</span>
+          </div>
+
+          <div class="hero-stat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            <span>Nivel medio superior</span>
+          </div>
+
+          <div class="hero-stat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            </svg>
+            <span>Teoría y temarios</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-frame"></div>
+        <div class="hero-image-container">
+          <img src="assets/img/perfil.jpg" alt="Profr. Octavio Cruz Vásquez" class="hero-image" />
+        </div>
+
+        <div class="hero-badge">
+          <p class="hero-badge-label">Cursos</p>
+          <p class="hero-badge-text">Teoría y contenido</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg class="hero-wave" viewBox="0 0 1440 100">
+    <path d="M0,60 C480,100 960,20 1440,60 L1440,100 L0,100 Z"></path>
+  </svg>
+</section>
+
+<!-- ================= LISTADO ================= -->
+<section id="lista-cursos" class="courses-section">
+  <div class="container">
+
+    <div class="courses-header fade-in">
+      <p class="section-label">Organización por nivel</p>
+      <h2 class="section-title">Listado de cursos</h2>
+    </div>
+
+    <!-- ===== Navegación rápida ===== -->
+    <div class="publications-cta fade-in" style="justify-content: flex-start; gap: 0.8rem; flex-wrap: wrap;">
+      <a href="#superior" class="btn btn-outline-dark btn-sm">Nivel superior</a>
+      <a href="#ems" class="btn btn-outline-dark btn-sm">Medio superior</a>
+      <a href="#detalles" class="btn btn-outline-dark btn-sm">Detalles</a>
+      <a href="recursos.html" class="btn btn-primary btn-sm">Ir a Recursos</a>
+    </div>
+
+    <!-- ================= NIVEL SUPERIOR ================= -->
+    <div id="superior" class="courses-header fade-in" style="margin-top: 1.2rem;">
+      <p class="section-label">Nivel superior</p>
+    </div>
+
+    <div class="courses-grid">
+
+      <div class="course-card fade-in">
+        <div class="course-header">
+          <span class="course-code">QUÍMICA</span>
+          <span class="course-level">Nivel superior</span>
+        </div>
+        <h3 class="course-name">Técnicas Experimentales</h3>
+        <p class="course-description">Fundamentos, práctica, seguridad y criterios de calidad en laboratorio.</p>
+        <div class="course-semester">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+          </svg>
+          <span>Teoría disponible</span>
+        </div>
+
+        <a href="cursos/Nivel-superior/TecnicasExperimentales.html" class="btn btn-link" style="margin-top: 0.6rem;">
+          Ver curso
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="course-card fade-in">
+        <div class="course-header">
+          <span class="course-code">QUÍMICA</span>
+          <span class="course-level">Nivel superior</span>
+        </div>
+        <h3 class="course-name">Termodinámica</h3>
+        <p class="course-description">Sistemas, variables de estado, leyes y aplicaciones en procesos químicos.</p>
+        <div class="course-semester">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+          </svg>
+          <span>Teoría disponible</span>
+        </div>
+
+        <a href="cursos/Nivel-superior/Termodinamica.html" class="btn btn-link" style="margin-top: 0.6rem;">
+          Ver curso
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="course-card fade-in">
+        <div class="course-header">
+          <span class="course-code">QUÍMICA</span>
+          <span class="course-level">Nivel superior</span>
+        </div>
+        <h3 class="course-name">Equilibrio de Fases</h3>
+        <p class="course-description">Diagramas de fase, equilibrio líquido-vapor y criterios termodinámicos.</p>
+        <div class="course-semester">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+          </svg>
+          <span>Teoría disponible</span>
+        </div>
+
+        <a href="cursos/Nivel-superior/EquilibriodeFases.html" class="btn btn-link" style="margin-top: 0.6rem;">
+          Ver curso
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="course-card fade-in">
+        <div class="course-header">
+          <span class="course-code">QUÍMICA</span>
+          <span class="course-level">Nivel superior</span>
+        </div>
+        <h3 class="course-name">Sistemas Dispersos</h3>
+        <p class="course-description">Coloides, estabilidad, interacciones y aplicaciones fisicoquímicas.</p>
+        <div class="course-semester">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+          </svg>
+          <span>Teoría disponible</span>
+        </div>
+
+        <a href="cursos/Nivel-superior/SistemasDispersos.html" class="btn btn-link" style="margin-top: 0.6rem;">
+          Ver curso
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- ================= NIVEL MEDIO SUPERIOR ================= -->
+    <div id="ems" class="courses-header fade-in" style="margin-top: 1.2rem;">
+      <p class="section-label">Nivel medio superior</p>
+    </div>
+
+    <div class="courses-grid">
+
+      <div class="course-card fade-in">
+        <div class="course-header">
+          <span class="course-code">FÍSICA</span>
+          <span class="course-level">Medio superior</span>
+        </div>
+        <h3 class="course-name">Física I</h3>
+        <p class="course-description">Cinemática, dinámica, trabajo y energía, con práctica guiada.</p>
+        <div class="course-semester">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+          </svg>
+          <span>Teoría disponible</span>
+        </div>
+
+        <a href="cursos/Nivel-medio-superior/Fisica-I.html" class="btn btn-link" style="margin-top: 0.6rem;">
+          Ver curso
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="course-card fade-in">
+        <div class="course-header">
+          <span class="course-code">FÍSICA</span>
+          <span class="course-level">Medio superior</span>
+        </div>
+        <h3 class="course-name">Física II</h3>
+        <p class="course-description">Electromagnetismo, fenómenos y resolución de problemas.</p>
+        <div class="course-semester">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+          </svg>
+          <span>Teoría disponible</span>
+        </div>
+
+        <a href="cursos/Nivel-medio-superior/Fisica-II.html" class="btn btn-link" style="margin-top: 0.6rem;">
+          Ver curso
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="course-card fade-in">
+        <div class="course-header">
+          <span class="course-code">QUÍMICA</span>
+          <span class="course-level">Medio superior</span>
+        </div>
+        <h3 class="course-name">Química I</h3>
+        <p class="course-description">Materia, enlaces, reacciones y bases para resolver ejercicios.</p>
+        <div class="course-semester">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+          </svg>
+          <span>Teoría disponible</span>
+        </div>
+
+        <a href="cursos/Nivel-medio-superior/Quimica-I.html" class="btn btn-link" style="margin-top: 0.6rem;">
+          Ver curso
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="course-card fade-in">
+        <div class="course-header">
+          <span class="course-code">QUÍMICA</span>
+          <span class="course-level">Medio superior</span>
+        </div>
+        <h3 class="course-name">Química II</h3>
+        <p class="course-description">Estequiometría, soluciones, equilibrio y temas selectos.</p>
+        <div class="course-semester">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" />
+          </svg>
+          <span>Teoría disponible</span>
+        </div>
+
+        <a href="cursos/Nivel-medio-superior/Quimica-II.html" class="btn btn-link" style="margin-top: 0.6rem;">
+          Ver curso
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= DETALLES ================= -->
+<section id="detalles" class="publications-section">
+  <div class="container">
+
+    <div class="publications-header fade-in">
+      <p class="section-label">Temarios y rutas</p>
+      <h2 class="section-title">Detalle por curso</h2>
+    </div>
+
+    <div class="research-list">
+
+      <div class="research-card fade-in">
+        <div class="research-content">
+          <div class="research-info" style="width:100%;">
+            <div class="research-title-row">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 7v14" /><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+              </svg>
+              <h3 class="research-title">Termodinámica (Nivel superior)</h3>
+            </div>
+
+            <p class="research-description">
+              Estructura sugerida: sistema y estado, ecuaciones de estado, 1ª y 2ª ley, entropía, equilibrio y aplicaciones.
+            </p>
+
+            <details style="margin-top: 0.6rem;">
+              <summary style="cursor:pointer; font-weight:600;">Ver contenidos sugeridos</summary>
+              <div style="margin-top:0.6rem;">
+                <ul style="margin:0; padding-left: 1.2rem;">
+                  <li>Sistemas, variables de estado y procesos.</li>
+                  <li>Ecuación del gas ideal y ecuaciones reales (VdW, etc.).</li>
+                  <li>Primera ley: trabajo, calor, energía interna.</li>
+                  <li>Segunda ley: entropía, irreversibilidad, máquinas térmicas.</li>
+                  <li>Potenciales termodinámicos y equilibrio.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <div class="research-actions">
+            <span class="research-status">Teoría</span>
+            <a class="btn btn-outline-dark btn-sm" href="cursos/Nivel-superior/Termodinamica.html">Abrir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-card fade-in">
+        <div class="research-content">
+          <div class="research-info" style="width:100%;">
+            <div class="research-title-row">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                <path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+              </svg>
+              <h3 class="research-title">Física I (Medio superior)</h3>
+            </div>
+
+            <p class="research-description">
+              Ruta sugerida: medición y unidades, cinemática, leyes de Newton, trabajo-energía, potencia y aplicaciones.
+            </p>
+
+            <details style="margin-top: 0.6rem;">
+              <summary style="cursor:pointer; font-weight:600;">Ver contenidos sugeridos</summary>
+              <div style="margin-top:0.6rem;">
+                <ul style="margin:0; padding-left: 1.2rem;">
+                  <li>Vectores y conversiones de unidades.</li>
+                  <li>MRU y MRUA (gráficas e interpretación).</li>
+                  <li>Leyes de Newton y diagramas de cuerpo libre.</li>
+                  <li>Trabajo, energía cinética y potencial.</li>
+                  <li>Conservación de la energía (casos guiados).</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <div class="research-actions">
+            <span class="research-status">Teoría</span>
+            <a class="btn btn-outline-dark btn-sm" href="cursos/Nivel-medio-superior/Fisica-I.html">Abrir</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="publications-cta fade-in">
+      <a class="btn btn-outline-dark" href="index.html#courses">
+        Volver al resumen (Index)
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Profr. Octavio Cruz Vásquez</h3>
+        <p>
+          Docencia en Física y Química<br />
+          Cursos (teoría y contenido)<br />
+          Recursos (exámenes y reactivos)
+        </p>
+
+        <div class="footer-social">
+          <a href="#" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+
+          <a href="#" aria-label="Research">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 7v14" />
+              <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="cursos.html">Cursos (teoría)</a></li>
+          <li><a href="recursos.html">Recursos (exámenes)</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="index.html#about">Acerca de mí</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>
+          Toluca, Estado de México<br />
+          (correo aquí)<br />
+          (teléfono aquí)
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Profr. Octavio Cruz Vásquez. Todos los derechos reservados.</p>
+      <p>Física • Química • Educación científica</p>
+    </div>
+  </div>
+</footer>
+
+<!-- JS al final, y ruta relativa -->
+<script src="script.js"></script>
+</body>
+</html>
